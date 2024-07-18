@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center; 
+    justify-content: center;} 
+    
+.container {
+    background: radial-gradient(circle, white, aqua); 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+form {
+    display: flex;
+    flex-direction: column; 
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; 
+    padding: 8px; 
+    margin-top: 5px; 
+    border: 3px solid #00060c; 
+    border-radius: 10px; 
+    box-sizing:border-box;
+}
+button {
+    background-color: #91bae5; 
+    color: white; 
+    padding: 10px 15px; 
+    border: 10px; 
+    border-radius: 10px; 
+    cursor: pointer;
+}
+button:hover {
+    background-color: #05488f; 
+}
+
+
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <h2>Login</h2>
+        <form >
+            <div >
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div >
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div >
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+            </div><br>
+            <button type="submit"><a href="/reg.html">submit</a></button>
+        </form>
+    </div>
+</body>
+</html>
